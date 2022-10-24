@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 html {
@@ -14,18 +14,16 @@ header {
     position: relative;
     display: flex;
     height: 90px;
-    width: 90vw;
+    width: 93vw;
     margin: auto;
     align-items: center;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight:  bolder;
-    background: violet;
 }
 
 .logo {
-    background: yellow;
     position: absolute;
     width: 50%;
     left: 50%;
@@ -60,12 +58,338 @@ header {
     border: 1px;
 }
 
-.contenedor-1 {
+/* contenedor-1*/
 
+.contenedor-1 {
+    background-image: url(/imagenes/img-sect-1.jpg);
+    background-position: center;
+    background-size: center;
+    background-size: cover;
+    max-height: 600px;
+    height: 90vw; 
+    width: 93vw; /*Ajustar*/
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
+
+.contenedor-1 h3 {
+    padding-bottom: 3vh;
+    font-size: clamp(10px,8vmin,60px);
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    width: 17ch;
+}
+
+.contenedor-1 a {
+    font-size: clamp(1px,1.6vmin,40px);
+    color: black;
+    font-weight: normal;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* contenedor-2*/
+
+.contenedor-2 {
+    width: 93vw; /*Ajustar*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw auto;
+}
+
+.contenedor-2__seccion {
+    position: relative;
+    margin: auto;
+    width: clamp(200px,45vw,600px);
+}
+
+.contenedor-2__seccion__img{
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-2__seccion__texto {
+    position: absolute;
+    top: 30%;
+    left: 3vw;
+}
+
+.contenedor-2__seccion__texto1 {
+    color: #519f10;
+    font-family: 'Lora', serif;
+    font-size: clamp(20px,4vw,40px);
+}
+
+.contenedor-2__seccion__texto2 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: clamp(5px,1.3vw,40px);
+    color: #575757;
+}
+
+/* contenedor-3*/
+
+.contenedor-3, 
+.contenedor-5,
+.contenedor-6{
+    width: 93vw; 
+    margin-top: 5vw;
+    background-color: #f8f8f8;
+    padding-bottom: 5vw;
+}
+
+#texto {
+    color: black;
+    padding: 5vw 0px;
+    text-align: justify;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#titulo {
+    font-size: clamp(10px,4vw,40px);
+    margin-bottom: 3vw;
+}
+
+#contenido {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin: auto;
+    width: 50vw;
+    font-size: clamp(5px,1.5vw,40px);
+}
+
+.descuento_forma {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #519f10;
+}
+
+.descuento_forma .descuento_valor {
+    padding-top: 13px;
+    padding-left: 3px;
+    color: #ffffff;
+    display: flex;
+    top: 100px;
+    left: auto;
+}
+
+.contenedor-3__seccion__productos {
+    border-width: 1rem;
+    width: 93vw; /*Ajustar*/
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(1px,1.6vmin,40px);
+}
+
+.contenedor-3__seccion1__producto_item {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 23rem;
+}
+
+.contenedor-3__seccion1__img {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgb(230, 225, 225);
+}
+
+.contenedor-3__seccion1__product,
+.contenedor-3__seccion1_precio{
+    color: #6d6d6d;
+    font-weight:bold;
+    padding: 8px 0px;
+}
+
+/* contenedor-4*/
+.contenedor-4{
+    width: 93vw; /*Ajustar*/
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    text-align: center;
+    color: #6d6d6d;
+}
+
+.contenedor-4__texto1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(10px,5vw,20px);
+    margin: auto;
+    width: 50vw;
+    padding: 2vw 0;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+
+.contenedor-4__texto2,
+.contenedor-4__texto3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-4__texto2 {
+    font-size: clamp(10px,1.25vw,20px);
+    font-weight:bold;
+    padding-bottom: 10px;
+}
+
+.contenedor-4__texto3 {
+    font-size: clamp(11px,1.24vw,20px);
+}
+
+/* contenedor-6*/
+.contenedor-6 {
+    width: 93vw; /*Ajustar*/
+    padding-top: 5vw;
+    padding-bottom: 7vw;
+    text-align: center;
+    background-image: url(/imagenes/img-sect-6.0.jpg);
+}
+
+.contenedor-6__formulario {
+    display: flex;
+    padding: 0 10vw;
+}
+
+.contenedor-6__formulario_texto {
+    color: #6d6d6d;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: clamp(11px,1.24vw,20px);
+    width: 60vw;
+    padding: 1.5vw 0;
+    border: 0.5px solid rgb(230, 225, 225);
+    font-size: clamp(10px,0.7vw,20px);
+}
+
+.contenedor-6__formulario_boton {
+    color: white;
+    background: black;
+    font-weight:bold;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-6__formulario_boton_texto {
+    margin: auto;
+}
+
+/* contenedor-7*/
+
+.contenedor-7__productos____fecha {
+    font-family: 'Lora', serif;
+    color: #519f10;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: 1.5vw 0;
+    font-style: italic;
+    font-size: clamp(3px,1.1vw,15px);
+}
+
+.contenedor-7__productos____titulo {
+    font-size: clamp(1px,2.3vw,25px);
+    font-family: 'Playfair Display', serif;
+    margin: 1.5vw 0;
+}
+
+.contenedor-7__productos____descrip {
+    font-size: clamp(5px,1.4vw,20px);
+    font-family: 'Playfair Display', serif;
+    margin: 1.7vw 0;
+    color: #6d6d6d;
+}
+
+.contenedor-7__productos____link {
+    margin: 1.7vw 0;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: clamp(3px,1.1vw,15px);
+}
+
+.contenedor-7__titulo {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* contenedor-8*/
+.contenedor-8 {
+    width: 93vw; /*Ajustar*/
+    margin: 4vw 0;
+}
+
+.contenedor-8__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Footer*/
+.footer_seccion1{
+    width: 93vw; /*Ajustar*/
+    padding: 4vw 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    font-family: 'Playfair Display';
+    justify-content: center;
+    align-items: center;
+}
+.footer__contenedores {
+    padding: 2rem;
+}
+.footer__contenedores li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.footer__contenedores__titulo{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer__contenedores li,a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer_parte2{
+    background-color: #EBEBEB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_parte2_img,
+.footer_parte2_texto{
+    max-width: 93vw; /*Ajustar*/
+    padding: 3rem;
+}
+
+.fa-heart {
+    color: red;
+}
+
 
 /* Responsive */
 @media (max-width: 1023px) {
+
+    /* Header */
     .nav-1 a{
         display: none;
     }
@@ -78,6 +402,72 @@ header {
         position: absolute;
         left: 10vh;
     }
-
-
 }
+
+@media (max-width: 767px) {
+
+    /* contenedor-1*/
+    .contenedor-1 {
+        min-height: 450px;
+    }
+
+    .contenedor-1 a {
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* contenedor-2*/
+    .contenedor-2__seccion {
+        width: clamp(90%,45vw,100%);
+    }
+
+    /* contenedor-3*/
+    #titulo {
+        font-size: clamp(20px,4vw,40px);
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+
+    #contenido {
+        font-size: 14px;
+        padding: 0vw 8vw;
+        width: 86vw;
+        text-align: center;
+    }
+    .descuento_forma {
+        font-size: 11px;
+    }
+    .contenedor-3__seccion1__product {
+        font-size: 14px;
+    }
+    .contenedor-3__seccion1_precio {
+        font-size: 14px;
+    }
+
+    /* contenedor-7*/
+
+    .contenedor-7__productos____fecha {
+        font-size: clamp(3px,4vw,15px);
+        margin: 4vw 0px;
+    }
+    
+    .contenedor-7__productos____titulo {
+        font-size: 16px;
+        margin: 4vw 0px;
+    }
+    
+    .contenedor-7__productos____descrip {
+        font-size: 14px;
+        margin: 4vw 0px;
+    }
+    
+    .contenedor-7__productos____link {
+        font-size: 11px;
+        margin: 6vw 0px;
+    }
+    .footer_seccion1{
+        font-size: 11px;
+    }
+    
+}
+
