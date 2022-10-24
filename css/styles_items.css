@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    display: flex;
+    height: 90px;
+    width: 93vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight:  bolder;
+}
+
+.logo {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    margin-left: -25%;
+    top: 25px;
+    text-align: center;
+}
+
+.nav-1,
+.nav-2 {
+    padding: 0 12px;
+}
+
+.nav-1 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 0 2.5vw 0 0;
+    
+}
+
+.nav-2 {
+    display: flex;
+}
+
+.nav-2__icono__uno {
+    padding-left: 8px;
+}
+
+.nav-2__icono__dos {
+    padding-left: 15px;
+    border: 1px;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #242424;
+}
+
+/*contenedor-1*/
+
+.contenedor_1 {
+    background-image: url(../imagenes/img_pag2_0.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 25vw;
+}
+
+
+
+/*contenedor-2*/
+
+.contenedor_2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: center;
+
+}
+
+.contenedor_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.seccion_1_imagen1 {
+    width: 500px;
+    height: 550px;
+}
+
+.seccion_1_imagen2 {
+    width: 500px;
+    height: 500px;
+}
+
+.seccion_2 {
+    margin: 100px 0px;
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+.seccion_2__titulo {
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(20px,4vw,25px);
+    color: #6d6d6d;
+    font-weight: bold;
+    padding: 1vw;
+    border-bottom: 15px;
+}
+
+.seccion_2__precio, .seccion_2__cont {
+    font-family: 'Lora', serif;
+    padding: 15px;
+    line-height:25px;
+}
+
+.seccion_2__cont {
+    font-size: clamp(1px,1.2vw,20px);
+}
+
+.seccion_2__precio {
+    font-size: clamp(7px,2vw,30px);
+}
+
+.seccion_2__img1 .seccion_2__img2 {
+    margin-left: 20px;
+    margin: 10px;
+}
+
+.seccion_2__img1 {
+    width: 300px;
+    height: 25px;
+    margin-left: 14px;
+}
+
+.seccion_2__img2 {
+    width: 200px;
+    height:60px;
+    margin-left: 14px;
+}
+
+.fa-square {
+    padding: 0px 15px 0px 0px;
+}
+
+
+
+
+
+
+
+
+/* Footer*/
+.footer_seccion1{
+    font-size: clamp(5px,1.2vw,20px);
+    width: 100vw; /*Ajustar*/
+    padding: 4vw 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    font-family: 'Playfair Display';
+    justify-content: space-between;
+}
+.footer__contenedores {
+    padding: 2rem;
+}
+.footer__contenedores li{
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.footer__contenedores__titulo{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer__contenedores li,a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer_parte2{
+    font-size: clamp(5px,1.2vw,20px);
+    background-color: #EBEBEB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_parte2_img,
+.footer_parte2_texto{
+    max-width: 93vw; /*Ajustar*/
+    padding: 3rem;
+}
+
+.fa-heart {
+    color: red;
+}
+
+
+/* Responsive */
+@media (max-width: 1023px) {
+
+    /* Header */
+    .nav-1 a{
+        display: none;
+    }
+
+    header {
+        position: relative;   
+    }
+
+    .logo {
+        position: absolute;
+        left: 10vh;
+    }
+
+    .seccion_2 {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .seccion_1_imagen1 {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .seccion_1_imagen2 {
+        width: 300px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion_2__titulo {
+        font-size: 15px;
+    }
+    
+    .seccion_2__cont {
+        font-size: 12px;
+    }
+    
+    .seccion_2__precio {
+        font-size: 15px;
+    }
+
+    .footer_seccion1, .footer_parte2{
+        font-size: 11px;
+    }
+
+    .footer_parte2 {
+        text-align: center;
+    }
+    
+    .seccion_2__img {
+        width: 150px;
+        height:35px;
+        margin-left: 15px;
+    }
+    
+}
+
