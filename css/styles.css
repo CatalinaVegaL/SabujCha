@@ -341,14 +341,14 @@ header {
 
 /* Footer*/
 .footer_seccion1{
+    font-size: clamp(5px,1.2vw,20px);
     width: 93vw; /*Ajustar*/
     padding: 4vw 0px;
     display: flex;
     flex-wrap: wrap;
     background-color: #f8f8f8;
     font-family: 'Playfair Display';
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 .footer__contenedores {
     padding: 2rem;
@@ -369,6 +369,7 @@ header {
 }
 
 .footer_parte2{
+    font-size: clamp(5px,1.2vw,20px);
     background-color: #EBEBEB;
     display: flex;
     flex-wrap: wrap;
