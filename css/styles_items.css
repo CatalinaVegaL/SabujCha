@@ -77,6 +77,15 @@ body {
     height: 25vw;
 }
 
+/*Contenedor-2*/
+
+.contenedor-2_1__contenido {
+
+}
+
+.contenedor-2.1__contenido {
+
+}
 
 
 /*contenedor-2*/
@@ -158,7 +167,87 @@ body {
     padding: 0px 15px 0px 0px;
 }
 
+/* contenedor-3*/
 
+.contenedor-3, 
+.contenedor-5,
+.contenedor-6{
+    width: 100vw; 
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+#texto {
+    color: black;
+    padding: 5vw 0px;
+    text-align: justify;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#titulo {
+    font-size: clamp(10px,4vw,40px);
+    margin-bottom: 3vw;
+}
+
+#contenido {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin: auto;
+    width: 50vw;
+    font-size: clamp(5px,1.5vw,40px);
+}
+
+.descuento_forma {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight:bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #519f10;
+}
+
+.descuento_forma .descuento_valor {
+    padding-top: 13px;
+    padding-left: 3px;
+    color: #ffffff;
+    display: flex;
+    top: 100px;
+    left: auto;
+}
+
+.contenedor-3__seccion__productos {
+    border-width: 1rem;
+    width: 100vw; /*Ajustar*/
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(1px,1.6vmin,40px);
+}
+
+.contenedor-3__seccion1__producto_item {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 23rem;
+}
+
+.contenedor-3__seccion1__img {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgb(230, 225, 225);
+}
+
+.contenedor-3__seccion1__product,
+.contenedor-3__seccion1_precio{
+    color: #6d6d6d;
+    font-weight:bold;
+    padding: 8px 0px;
+}
 
 
 
@@ -227,7 +316,7 @@ body {
 
     .logo {
         position: absolute;
-        left: 10vh;
+        left: 14vh;
     }
 
     .seccion_2 {
@@ -271,6 +360,34 @@ body {
         width: 150px;
         height:35px;
         margin-left: 15px;
+    }
+
+    .contenedor_1 {
+        width: 100vw;
+        height: 60vw;
+    }
+
+     /* contenedor-3*/
+     #titulo {
+        font-size: clamp(20px,4vw,40px);
+        text-align: center;
+        margin-bottom: 5vw;
+    }
+
+    #contenido {
+        font-size: 14px;
+        padding: 0vw 8vw;
+        width: 86vw;
+        text-align: center;
+    }
+    .descuento_forma {
+        font-size: 12px;
+    }
+    .contenedor-3__seccion1__product {
+        font-size: 12px;
+    }
+    .contenedor-3__seccion1_precio {
+        font-size: 12px;
     }
     
 }
