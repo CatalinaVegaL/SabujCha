@@ -195,6 +195,7 @@ header {
 }
 
 .contenedor-3__seccion1__producto_item {
+    padding: 5px;
     display: inline-block;
     position: relative;
     margin: auto;
@@ -466,7 +467,7 @@ header {
         font-size: 11px;
         margin: 6vw 0px;
     }
-    .footer_seccion1{
+    .footer_seccion1, .footer_parte2{
         font-size: 11px;
     }
     
